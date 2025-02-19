@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+
+	background-color: #f4f4f4;
+	font-size: 12px;
+
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+/* Start Navbar */
+
+/* start left sidebar  */
+.leftsidebars{
+	/* min-height: 100vh; */
+	background-color: #000;
+}
+
+.nav-item.nav-categories{
+	color: #fff;
+	opacity: .9;
+
+	margin: 10px 0;
+}
+
+.nav-item .sidebarlinks{
+	opacity: .9;
+
+	position: relative;
+}
+
+.nav-item .sidebarlinks:hover{
+	opacity: 1;
+	background-color: #666;
+}
+
+.nav-item .sidebarlinks .mores{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+
+	transform: translateY(-50%);
+}
+
+.sidebarlinks.currents{
+	background-color: #333;
+	box-shadow: 1px 0 5px #222;
+}
+/* end left sidebar */
+
+
+/* start right sidebar  */
+.right-panels{
+	width:200px;
+	min-height:80vh;
+	background-color: #999;
+
+	position: absolute;
+	top: 70px;
+	right: 0;
+
+	box-shadow: -5px 3px 10px rgba(0,0,0,0.5);
+	padding: 10px;
+	
+	z-index: 200;
+
+	display: none;
+}
+
+
+body.show-nav > .right-panels{
+	display: block;
+}
+
+
+.right-panels h6{
+	background-color: steelblue;
+	color: #fff;
+	padding: 10px;
+}
+
+.right-panels .themecolors{
+	column-count:5;
+	column-gap: 7px;
+}
+
+/* end right sidebar */
+
+/* End Navbar */
+
+
+/* Start Site Setting */
+.sitesettings{
+	width: 30px;
+	height: 30px;
+
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	/* padding: 10px; */
+
+	position: fixed;
+	right: 10px;
+	bottom: 50px;
+
+	text-align: center;
+	line-height: 30px;
+
+	opacity: .7;
+
+	z-index: 100;
+
+}
+
+.sitesettings:hover{
+	opacity:1;
+}
+
+
+
+.ani-rotates{
+	animation-name:myanirotate;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes myanirotate{
+	from{
+		transform:rotate(0deg);
+	}
+
+	to{
+		transform:rotate(360deg);
+	}
+}
+
+
+/* End Site Setting */
+
+a{
+	text-decoration: none;
+}
+
+/*Start Navbar*/
+.sidebars{
+	min-height: 100vh;
+	background-color: #000;
+}
+
+.nav-item.nav-categories{
+	color:#fff;
+	margin: 10px 0;
+}
+
+.sidebarlinks,.sidebarlinks .fas{
+	color: #fff;
+	opacity: .9;
+	transition: all .3s;
+
+}
+
+.sidebarlinks:hover,.sidebarlinks .fas:hover{
+	color: #fff;
+	opacity: 1;
+	background-color: #666;
+}
+
+.sidebarlinks{
+	position: relative;
+}
+
+.mores{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+
+	transform:translateY(-50%);
+}
+
+.currents{
+	background-color: #333;
+	box-shadow: 1px 0 5px #222;
+}
+
+
+
+.close-btns{
+	width: 25px;
+	height: 25px;
+	background-color: transparent;
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	line-height: 22px;
+	margin-right: 3px;
+
+	outline: none;
+	display: none;
+
+	padding: 3px;
+}
+
+
+@media (max-width:768px){
+	.navbar .close-btns{
+		display: block;
+	}
+}
+/*End Navbar*/
+
+
+/* Start Top Sidebar */
+
+/* start notify & user account */
+.dropdowns{
+	position: relative;
+}
+
+.dropbtn{
+	text-decoration: none;
+}
+
+.dropdowns .dropdown-contents{
+	min-width: 230px;
+	background-color: #f6f6f6;
+	
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+	z-index: 10;
+
+	display: none;
+}
+
+.dropdown-contents a{
+	color: #000;
+	padding: 10px;
+
+	display: block;
+}
+
+.dropdown-contents a:hover{
+	background-color: #ddd;
+}
+
+.dropdowns .dropdown-contents.show{
+	display: block;
+}
+/* end notify & user account */
+
+
+/* Start Top Sidebar */
+
+
+/* Start Shortcut Area */
+
+.border-left-primarys{
+	border-left-width: 3px;
+	border-left-color:steelblue;
+}
+
+.border-left-successes{
+	border-left-width: 3px;
+	border-left-color:green;
+}
+
+.border-left-infos{
+	border-left-width: 3px;
+	border-left-color:skyblue;
+}
+
+.border-left-warnings{
+	border-left-width: 3px;
+	border-left-color:orange;
+}
+
+
+
+/* End Shortcut Area */
