@@ -209,7 +209,6 @@ a{
 	justify-content: center;
 	align-items: center;
 
-	line-height: 22px;
 	margin-right: 3px;
 
 	outline: none;
@@ -247,6 +246,7 @@ a{
 	transform: translateX(-50%);
 
 	z-index: 10;
+	padding: 10px;
 
 	display: none;
 }
